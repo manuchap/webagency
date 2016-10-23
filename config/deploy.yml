@@ -1,16 +1,10 @@
-# development:
-#   host: dev.example.com
-#   email: john@doe.net
-#   password: apassword
-#   # api_key: <your api key here>
-# staging:
-#   host: staging.example.com
-#   email: john@doe.net
-#   password: apassword
-#   # api_key: <your api key here>
-# production:
-#   host: www.example.com
-#   email: john@doe.net
-#   password: apassword
-#   # api_key: <your api key here>
-#   # ssl: true
+staging:
+  host: http://0.0.0.0:5000
+  handle: itchy-stream-4024
+  email: manuchap@gmail.com
+  api_key: bb3be4f0209440288523f2b4ed6894fe2dd868d3
+production:
+  host: https://manuchap.herokuapp.com
+  handle: pacific-fog-4242
+  email: manuchap@gmail.com
+  api_key: bb3be4f0209440288523f2b4ed6894fe2dd868d3
