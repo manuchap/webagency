@@ -5,12 +5,26 @@ published: true
 !!!
 %html{lang: "en"}
   %head
-    %meta{charset: "utf-8"}
     %title {{ site.name }}
+    %meta{charset: "utf-8"}
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
     %meta{name: "description", value: "{{ site.meta_description }}"}
+    {% include 'links' %}
   %body
-    %h1 {{ page.title }}
     {% block 'main' %}
-    %p Lorem ipsum....
+    {% include 'menu' %}
+    {% include 'header1-1' %}
+    {% include 'gallery1-0' %}
+    {% include 'header4-1' %}
+    {% include 'features7-2' %}
+    {% include 'pricing-table1-3' %}
+    {% include 'contacts2-4' %}
+    {% include 'footer' %}
+    {% include 'scripts' %}
+    %input{:name => "animation", :type => "hidden"}/
+    #scrollToTop.scrollToTop.mbr-arrow-up
+      %a{:style => "text-align: center;"}
+        %i.mbr-arrow-up-icon
     {% endblock %}
