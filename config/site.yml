@@ -11,7 +11,7 @@ name: "websites.studiowan.fr"
 # The locale listed first is the site's default locale
 # Locales are specified using ISO language codes
 # Possible locales include: en, de, fr, pl, pt-BR, it, nl, nb, es, ru, et, ja, zh-CN
-locales: [en]
+locales: [en, fr]
 
 # The site's timezone
 # This converts the server's time to the site's time zone in templates
@@ -46,3 +46,18 @@ meta_description: "some meta description"
 #     address: 700 South Laflin Street
 #   theme:
 #     background_image: "/samples/background.png"
+metafields:
+  address:
+    street: "700 South Laflin Street, Chicago, IL 60607"
+    city: "City, AA 99999"
+  contacts:
+    email: "support@studiowan.fr"
+    phone: "+1 (0) 000 0000 001"
+    fax: "+1 (0) 000 0000 002"
+  links:
+    link1_title: "Website builder"
+    link1_url: "https://mobirise.com/"
+    link2_title: "Download for Windows"
+    link2_url: "https://mobirise.com/mobirise-free-win.zip"
+    link3_title: "Download for Mac"
+    link3_url: "https://mobirise.com/mobirise-free-mac.zip"
