@@ -1,18 +1,20 @@
 %section.engine
-  %a{:href => "https://mobirise.com", :rel => "external"} html web site building
+  -# %a{:href => "https://mobirise.com", :rel => "external"} html web site building
 %section#header1-1.mbr-section.mbr-section-hero.mbr-section-full.mbr-parallax-background.mbr-section-with-arrow{:style => "background-image: url( {{ site.metafields.bgs.intro }} );"}
   .mbr-overlay{:style => "opacity: 0.5; background-color: rgb(0, 0, 0);"}
   .mbr-table-cell
     .container
       .row
         .mbr-section.col-md-10.col-md-offset-1.text-xs-center
-          %h1.mbr-section-title.display-1 full screen intro
+          {% block 'intro' %}
+          %h1.mbr-section-title.display-1 {% editable_text "intro", hint: "Big title.", block:"intro", line_break: false, format: 'raw', rows: 1 %}full screen intro{% endeditable_text %}
           %p.mbr-section-lead.lead
-            Click any text to edit or style it. Click blue "Gear" icon in the top right corner to hide/show buttons, text, title and change the block background.
+            {% editable_text "lead", hint: "Big title.", block:"intro", format: "html", rows: 8 %}Click any text to edit or style it. Click blue "Gear" icon in the top right corner to hide/show buttons, text, title and change the block background.
             %br/
             Click red "+" in the bottom right corner to add a new block. Use the top left menu to create new pages, sites and add extensions.
           .mbr-section-btn
-            %a.btn.btn-lg.btn-primary{:href => "https://mobirise.com"} CLICK TO EDIT
+            %a.btn.btn-lg.btn-primary{:href => "https://mobirise.com"} CLICK TO EDIT{% endeditable_text %}
+          {% endblock %}
   .mbr-arrow.mbr-arrow-floating{"aria-hidden" => "true"}
     %a{:href => "#header4-1"}
       %i.mbr-arrow-icon

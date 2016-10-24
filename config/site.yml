@@ -48,8 +48,10 @@ meta_description: "some meta description"
 #     background_image: "/samples/background.png"
 metafields:
   bgs:
-    bg1: "images/pexels-photo-2000x1333-10.jpg"
-    bg2: "images/pexels-photo-26829-2000x1002-92.jpg"
+    bg1: "/samples/assets/pexels-photo.jpg"
+    bg2: "/samples/assets/pexels-photo-26829.jpg"
+    intro: "/samples/assets/pexels-photo-1.jpg"
+    contact: "/samples/assets/pexels-photo-26829-1.jpg"
   address:
     street: 700 South Laflin Street, Chicago, IL 60607
     city: City, AA 99999
@@ -58,9 +60,9 @@ metafields:
     phone: "+1 (0) 000 0000 001"
     fax: "+1 (0) 000 0000 002"
   links:
-    link1_title: Website builder
-    link1_url: https://mobirise.com/
+    link1_title: Website editor
+    link1_url: http://site-editor.studiowan.fr/
     link2_title: Download for Windows
-    link2_url: https://mobirise.com/mobirise-free-win.zip
+    link2_url: http://site-editor.studiowan.fr/win.zip
     link3_title: Download for Mac
-    link3_url: https://mobirise.com/mobirise-free-mac.zip
+    link3_url: http://site-editor.studiowan.fr/mac.zip
