@@ -6,23 +6,27 @@
           .navbar-brand
             %a.navbar-caption{:href => "http://studiowan.fr"}
               %span.etl-icon.icon-compass.mbr-iconfont.mbr-iconfont-btn>
-              StudioWAN.fr
+              websites.StudioWAN.fr
         .mbr-table-cell
           %button.navbar-toggler.pull-xs-right.hidden-md-up{"data-target" => "#exCollapsingNavbar", "data-toggle" => "collapse", :type => "button"}
             .hamburger-icon
           %ul#exCollapsingNavbar.nav-dropdown.collapse.pull-xs-right.nav.navbar-nav.navbar-toggleable-sm
             %li.nav-item
-              %a.nav-link.link{:href => "index.html#gallery1-0"}
-                %span.etl-icon.icon-genius.mbr-iconfont.mbr-iconfont-btn>
-                WEDO
+              %a.nav-link.link{:href => "index.html#top-1"}
+                %span.etl-icon.icon-laptop.mbr-iconfont.mbr-iconfont-btn>
+                {{ 'top' | translate }}
             %li.nav-item
               %a.nav-link.link{:href => "index.html#header4-1"}
+                %span.etl-icon.icon-video.mbr-iconfont.mbr-iconfont-btn>
+                {{ 'wedo' | translate }}
+            %li.nav-item
+              %a.nav-link.link{:href => "index.html#features7-2"}
                 %span.etl-icon.icon-pencil.mbr-iconfont.mbr-iconfont-btn>
-                HOW
+                {{ 'spec' | translate }}
             %li.nav-item
               %a.nav-link.link{:href => "index.html#pricing-table1-3"}
                 %span.etl-icon.icon-piechart.mbr-iconfont.mbr-iconfont-btn>
-                PRICING
+                {{ 'pricing' | translate }}
             %li.nav-item
               %a.nav-link.link{:href => "index.html#contacts2-4"}
                 %span.etl-icon.icon-heart.mbr-iconfont.mbr-iconfont-btn>

@@ -440,7 +440,7 @@
         var $scroller = $('#scrollToTop'),
             $main = $('body,html'),
             $window = $(window);
-        $scroller.css('display', 'none');    
+        $scroller.css('display', 'none');
         $window.scroll(function () {
         if ($(this).scrollTop() > 0) {
             $scroller.fadeIn();
@@ -453,7 +453,7 @@
                 scrollTop: 0
             }, 400);
             return false;
-        });        
+        });
     }
     });
 
@@ -465,14 +465,14 @@
 
 })(jQuery);
 !function() {
-    try {
-        document.getElementsByClassName('engine')[0].getElementsByTagName('a')[0].removeAttribute('rel');
-    } catch(err){ }
-    if(!document.getElementById('top-1')) {
-        var e = document.createElement("section");
-        e.id = "top-1";
-        e.className = "engine";
-        e.innerHTML = '<a href="https://mobirise.com">mobirise.com</a> Mobirise v3.8.3';
-        document.body.insertBefore(e, document.body.childNodes[0]);
-    }
+   try {
+       document.getElementsByClassName('engine')[0].getElementsByTagName('a')[0].removeAttribute('rel');
+   } catch(err){ }
+   if(!document.getElementById('top-1')) {
+       var e = document.createElement("section");
+       e.id = "top-1";
+       e.className = "engine";
+      //  e.innerHTML = '<a href="https://mobirise.com">mobirise.com</a> Mobirise v3.8.3';
+       document.body.insertBefore(e, document.body.childNodes[0]);
+   }
 }();

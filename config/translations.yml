@@ -3,6 +3,18 @@
 #   {{ 'hello_world' | translate }}
 #
 
-# hello_world:
-#   en: Hello world !
-#   fr: Bonjour le monde !
+home:
+  en: CLIENT AREA
+  fr: ESPACE CLIENT
+top:
+  en: TOP
+  fr: ACCUEIL
+wedo:
+  en: WEDO
+  fr: DEMO
+spec:
+  en: HOW
+  fr: TECH
+pricing:
+  en: PRICING
+  fr: PRIX

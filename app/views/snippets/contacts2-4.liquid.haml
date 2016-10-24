@@ -6,28 +6,31 @@
         %p
           %strong Address
           %br/
-          1234 Street Name
+          {{ site.metafields.address.street }}
           %br/
-          City, AA 99999
+          {{ site.metafields.address.city }}
           %br/
           %br/
           %br/
           %strong Contacts
           %br/
-          Email: support@mobirise.com
+          Email: {{ site.metafields.contacts.email }}
           %br/
-          Phone: +1 (0) 000 0000 001
+          Phone: {{ site.metafields.contacts.phone }}
           %br/
-          Fax: +1 (0) 000 0000 002
+          Fax: {{ site.metafields.contacts.fax }}
       .mbr-footer-content.col-xs-12.col-md-3
         %strong Links
         %ul
           %li
-            %a.text-white{:href => "https://mobirise.com/"} Website builder
+            %a.text-white{:href => "{{ site.metafields.links.link1_url }}"} {{ site.metafields.links.link1_title }}
           %li
-            %a.text-white{:href => "https://mobirise.com/mobirise-free-win.zip"} Download for Windows
+            %a.text-white{:href => "{{ site.metafields.links.link2_url }}"} {{ site.metafields.links.link2_title }}
           %li
-            %a.text-white{:href => "https://mobirise.com/mobirise-free-mac.zip"} Download for Mac
+            %a.text-white{:href => "{{ site.metafields.links.link3_url }}"} {{ site.metafields.links.link3_title }}
+        %br
+        .mbr-section-btn
+          %a.btn.btn-lg.btn-primary{:href => "https://mobirise.com"} {{ 'home' | translate }}
       .col-xs-12.col-md-6
         .mbr-map
           %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw", :style => "border:0"}

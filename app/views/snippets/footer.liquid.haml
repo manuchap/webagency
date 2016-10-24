@@ -1,3 +1,4 @@
 %footer#footer1-2.mbr-small-footer.mbr-section.mbr-section-nopadding{:style => "background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;"}
   .container
-    %p.text-xs-center Copyright (c) 2016 Mobirise.
+    %p.text-xs-center Copyright &copy; {{ site.title }} {{ now | format_date: '%Y' }}
+    {% locale_switcher label: 'locale', sep: ' - ' %}
