@@ -1,11 +1,3 @@
-# Your translations go here. To be used with the 'translate' liquid filter
-# Example:
-#   {{ 'hello_world' | translate }}
-#
-
-home:
-  en: CLIENT AREA
-  fr: ESPACE CLIENT
 top:
   en: TOP
   fr: ACCUEIL
@@ -18,3 +10,6 @@ spec:
 pricing:
   en: PRICING
   fr: PRIX
+home:
+  en: CLIENT AREA
+  fr: ESPACE CLIENT

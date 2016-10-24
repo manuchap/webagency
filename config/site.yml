@@ -47,17 +47,20 @@ meta_description: "some meta description"
 #   theme:
 #     background_image: "/samples/background.png"
 metafields:
+  bgs:
+    bg1: "images/pexels-photo-2000x1333-10.jpg"
+    bg2: "images/pexels-photo-26829-2000x1002-92.jpg"
   address:
-    street: "700 South Laflin Street, Chicago, IL 60607"
-    city: "City, AA 99999"
+    street: 700 South Laflin Street, Chicago, IL 60607
+    city: City, AA 99999
   contacts:
-    email: "support@studiowan.fr"
+    email: support@studiowan.fr
     phone: "+1 (0) 000 0000 001"
     fax: "+1 (0) 000 0000 002"
   links:
-    link1_title: "Website builder"
-    link1_url: "https://mobirise.com/"
-    link2_title: "Download for Windows"
-    link2_url: "https://mobirise.com/mobirise-free-win.zip"
-    link3_title: "Download for Mac"
-    link3_url: "https://mobirise.com/mobirise-free-mac.zip"
+    link1_title: Website builder
+    link1_url: https://mobirise.com/
+    link2_title: Download for Windows
+    link2_url: https://mobirise.com/mobirise-free-win.zip
+    link3_title: Download for Mac
+    link3_url: https://mobirise.com/mobirise-free-mac.zip

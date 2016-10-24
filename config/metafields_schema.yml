@@ -1,3 +1,10 @@
+bgs:
+  label: Backgrounds
+  fields:
+    intro:
+      type: image
+    contact:
+      type: image
 address:
   label: Adress
   fields:
