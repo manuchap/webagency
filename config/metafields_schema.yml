@@ -5,6 +5,8 @@ bgs:
       type: image
     contact:
       type: image
+    youtube:
+      type: string
 address:
   label: Adress
   fields:

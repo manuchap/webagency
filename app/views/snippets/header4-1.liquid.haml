@@ -1,8 +1,11 @@
-%section#header4-1.mbr-section.mbr-section-hero.mbr-section-full.mbr-section-with-arrow{"data-bg-video" => "https://www.youtube.com/embed/C-9V2TzqtxQ?rel=0&amp;showinfo=0&autoplay=0&loop=0"}
-  .mbr-background-video-preview{:style => "background-size: cover; background-image: url(https://img.youtube.com/vi/C-9V2TzqtxQ/maxresdefault.jpg); background-position: 50% 50%;"}
+{% capture vlink %}https://www.youtube.com/embed/{{ site.metafields.bgs.youtube }}?rel=0&amp;showinfo=0&autoplay=0&loop=0{% endcapture %}
+{% capture ilink %}https://img.youtube.com/vi/{{ site.metafields.bgs.youtube }}/maxresdefault.jpg{% endcapture %}
+{% capture flink %}https://www.youtube.com/embed/{{ site.metafields.bgs.youtube }}?autoplay=0&modestbranding=1&controls=0&showinfo=0&rel=0&enablejsapi=1&version=3&playerapiid=mbYTP_video_1477229250347&origin=*&allowfullscreen=true&wmode=transparent&iv_load_policy=3&html5=1&widgetid=1{% endcapture %}
+%section#header4-1.mbr-section.mbr-section-hero.mbr-section-full.mbr-section-with-arrow{"data-bg-video" => "{{ vlink }}"}
+  .mbr-background-video-preview{:style => "background-size: cover; background-image: url({{ ilink }}); background-position: 50% 50%;"}
   #video_1477229250347.mbr-background-video.mb_YTPlayer.isMuted
     #wrapper_mbYTP_video_1477229250347.mbYTP_wrapper{:style => "position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0;"}
-      %iframe#mbYTP_video_1477229250347.playerBox{:allowfullscreen => "1", :frameborder => "0", :height => "360", :src => "https://www.youtube.com/embed/C-9V2TzqtxQ?autoplay=0&modestbranding=1&controls=0&showinfo=0&rel=0&enablejsapi=1&version=3&playerapiid=mbYTP_video_1477229250347&origin=*&allowfullscreen=true&wmode=transparent&iv_load_policy=3&html5=1&widgetid=1", :style => "position: absolute; z-index: 0; width: 1268px; height: 914.6800000000001px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -128.84px; margin-left: -57.5px;", :title => "YouTube video player", :width => "640"}
+      %iframe#mbYTP_video_1477229250347.playerBox{:allowfullscreen => "1", :frameborder => "0", :height => "360", :src => "{{ flink }}", :style => "position: absolute; z-index: 0; width: 1268px; height: 914.6800000000001px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -128.84px; margin-left: -57.5px;", :title => "YouTube video player", :width => "640"}
       .YTPOverlay{:style => "position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"}
   .mbr-overlay{:style => "opacity: 0.5; background-color: rgb(0, 0, 0);"}
   .mbr-table-cell
