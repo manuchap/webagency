@@ -33,4 +33,4 @@
           %a.btn.btn-lg.btn-primary{:href => "https://mobirise.com"} {{ 'home' | translate }}
       .col-xs-12.col-md-6
         .mbr-map
-          %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw", :style => "border:0"}
+          %iframe{:allowfullscreen => "", :frameborder => "0", :src => "{{ site.metafields.address.gmap }}", :style => "border:0"}

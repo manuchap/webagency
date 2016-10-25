@@ -48,13 +48,12 @@ meta_description: "some meta description"
 #     background_image: "/samples/background.png"
 metafields:
   bgs:
-    bg1: "/samples/assets/pexels-photo.jpg"
-    bg2: "/samples/assets/pexels-photo-26829.jpg"
     intro: "/samples/assets/pexels-photo-1.jpg"
     contact: "/samples/assets/pexels-photo-26829-1.jpg"
   address:
     street: 700 South Laflin Street, Chicago, IL 60607
     city: City, AA 99999
+    gmap: "https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw"
   contacts:
     email: support@studiowan.fr
     phone: "+1 (0) 000 0000 001"

@@ -14,6 +14,9 @@ address:
     city:
       hint: "City you live in"
       type: string
+    gmap:
+      hint: "Google map link"
+      type: string
 contacts:
   label: contacts
   fields:
