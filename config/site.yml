@@ -50,16 +50,17 @@ metafields:
   bgs:
     intro: "/samples/assets/pexels-photo-1.jpg"
     contact: "/samples/assets/pexels-photo-26829-1.jpg"
-    youtube: "C-9V2TzqtxQ"
+    youtube: C-9V2TzqtxQ
   address:
     street: 700 South Laflin Street, Chicago, IL 60607
     city: City, AA 99999
-    gmap: "https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw"
+    gmap: https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw
   contacts:
     email: support@studiowan.fr
     phone: "+1 (0) 000 0000 001"
     fax: "+1 (0) 000 0000 002"
   links:
+    support: http://support.studiowan.fr/
     link1_title: Website editor
     link1_url: http://site-editor.studiowan.fr/
     link2_title: Download for Windows
