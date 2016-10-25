@@ -10,18 +10,8 @@ editable_elements:
   intro/button: |-
     '<a class="btn btn-lg btn-primary" href="https://mobirise.com">CLICK TO EDIT</a>'
 ---
-!!!
-%html{lang: "en"}
-  %head
-    %title {{ site.name }}
-    %meta{charset: "utf-8"}
-    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
-    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
-    %meta{name: "keywords", value: "{{ site.meta_keywords }}"}
-    %meta{name: "description", value: "{{ site.meta_description }}"}
-    {% include 'links' %}
-  %body
-    {% block 'main' %}
+{% extends layouts/page %}
+  {% block 'main' %}
     {% include 'menu' %}
     {% include 'header1-1' %}
     {% include 'header4-1' %}
@@ -30,8 +20,5 @@ editable_elements:
     {% include 'contacts2-4' %}
     {% include 'footer' %}
     {% include 'scripts' %}
-    %input{:name => "animation", :type => "hidden"}/
-    #scrollToTop.scrollToTop.mbr-arrow-up
-      %a{:style => "text-align: center;"}
-        %i.mbr-arrow-up-icon
-    {% endblock %}
+    {% include 'top' %}
+  {% endblock %}
