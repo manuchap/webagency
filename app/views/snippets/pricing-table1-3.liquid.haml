@@ -1,3 +1,5 @@
+{% block 'prices' %}
+{% editable_model bundles %}
 %section#pricing-table1-3.mbr-section{:style => "background-color: rgb(48, 48, 48); padding-top: 120px; padding-bottom: 120px;"}
   .mbr-section.mbr-section__container.mbr-section__container--middle
     .container
@@ -38,9 +40,11 @@
           .mbr-plan-body.card-block
             .mbr-plan-list
               %ul.list-group.list-group-flush
-                %li.list-group-item {{ bundle.storage }}
-                %li.list-group-item {{ bundle.email }}
-                %li.list-group-item {{ bundle.option }}
+                %li.list-group-item Storage: {{ bundle.storage }} Go
+                %li.list-group-item Email addresses: {{ bundle.email }}
+                %li.list-group-item option: {{ bundle.option }}
             .mbr-plan-btn
               %a.btn.btn-white.btn-white-outline{:href => "{{ item.link }}"} DEMO
       {% endfor %}
+{% endeditable_model %}
+{% endblock %}

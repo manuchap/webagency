@@ -48,7 +48,7 @@ fields:
     label: Hot # Human readable name of the field
     type: boolean
     required: false
-    hint: EHot tag
+    hint: Hot tag
     localized: false
 
 - description: # The lowercase, underscored name of the field
