@@ -7,84 +7,40 @@
           %small.mbr-section-subtitle Pricing table with four columns and solid color background.
   .mbr-section.mbr-section-nopadding.mbr-price-table
     .row
+      {% for bundle in contents.bundles %}
       .col-xs-12.col-md-3.col-xl-3
         .mbr-plan.card.text-xs-center
-          .mbr-plan-header.card-block
-            .card-title
-              %h3.mbr-plan-title STANDARD
-              %small.mbr-plan-subtitle Description
-            .card-text
-              .mbr-price
-                %span.mbr-price-value $
-                %span.mbr-price-figure 0
-                %small.mbr-price-term /mo.
-              %small.mbr-plan-price-desc Mobirise is perfect for non-techies who are not familiar with web development.
-          .mbr-plan-body.card-block
-            .mbr-plan-list
-              %ul.list-group.list-group-flush
-                %li.list-group-item 32 GB storage
-                %li.list-group-item Unlimited users
-                %li.list-group-item 15 GB bandwidth
-            .mbr-plan-btn
-              %a.btn.btn-white.btn-white-outline{:href => "https://mobirise.com"} DEMO
-      .col-xs-12.col-md-3.col-xl-3
-        .mbr-plan.card.text-xs-center
+          {% case bundle.hot %}
+          {% when true %}
           .mbr-plan-header.card-block.bg-primary
             .mbr-plan-label HOT!
             .card-title
-              %h3.mbr-plan-title BUSINESS
-              %small.mbr-plan-subtitle Description
+              %h3.mbr-plan-title {{ bundle.title }}
+              %small.mbr-plan-subtitle {{ bundle.description }}
             .card-text
               .mbr-price
                 %span.mbr-price-value $
-                %span.mbr-price-figure 0
+                %span.mbr-price-figure {{ bundle.price }}
                 %small.mbr-price-term /mo.
-              %small.mbr-plan-price-desc Mobirise is perfect for non-techies who are not familiar with web development.
-          .mbr-plan-body.card-block
-            .mbr-plan-list
-              %ul.list-group.list-group-flush
-                %li.list-group-item 32 GB storage
-                %li.list-group-item Unlimited users
-                %li.list-group-item 15 GB bandwidth
-            .mbr-plan-btn
-              %a.btn.btn-white.btn-white-outline{:href => "https://mobirise.com"} DEMO
-      .col-xs-12.col-md-3.col-xl-3
-        .mbr-plan.card.text-xs-center
+              %small.mbr-plan-price-desc {{ bundle.detail }}
+          {% when false %}
           .mbr-plan-header.card-block
             .card-title
-              %h3.mbr-plan-title PREMIUM
-              %small.mbr-plan-subtitle Description
+              %h3.mbr-plan-title {{ bundle.title }}
+              %small.mbr-plan-subtitle {{ bundle.description }}
             .card-text
               .mbr-price
                 %span.mbr-price-value $
-                %span.mbr-price-figure 0
+                %span.mbr-price-figure {{ bundle.price }}
                 %small.mbr-price-term /mo.
-              %small.mbr-plan-price-desc Mobirise is perfect for non-techies who are not familiar with web development.
+              %small.mbr-plan-price-desc {{ bundle.detail }}
+          {% endcase %}
           .mbr-plan-body.card-block
             .mbr-plan-list
               %ul.list-group.list-group-flush
-                %li.list-group-item 32 GB storage
-                %li.list-group-item Unlimited users
-                %li.list-group-item 15 GB bandwidth
+                %li.list-group-item {{ bundle.storage }}
+                %li.list-group-item {{ bundle.email }}
+                %li.list-group-item {{ bundle.option }}
             .mbr-plan-btn
-              %a.btn.btn-white.btn-white-outline{:href => "https://mobirise.com"} DEMO
-      .col-xs-12.col-md-3.col-xl-3
-        .mbr-plan.card.text-xs-center
-          .mbr-plan-header.card-block
-            .card-title
-              %h3.mbr-plan-title ULTIMATE
-              %small.mbr-plan-subtitle Description
-            .card-text
-              .mbr-price
-                %span.mbr-price-value $
-                %span.mbr-price-figure 0
-                %small.mbr-price-term /mo.
-              %small.mbr-plan-price-desc Mobirise is perfect for non-techies who are not familiar with web development.
-          .mbr-plan-body.card-block
-            .mbr-plan-list
-              %ul.list-group.list-group-flush
-                %li.list-group-item 32 GB storage
-                %li.list-group-item Unlimited users
-                %li.list-group-item 15 GB bandwidth
-            .mbr-plan-btn
-              %a.btn.btn-white.btn-white-outline{:href => "https://mobirise.com"} DEMO
+              %a.btn.btn-white.btn-white-outline{:href => "{{ item.link }}"} DEMO
+      {% endfor %}

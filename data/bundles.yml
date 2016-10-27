@@ -1,0 +1,39 @@
+- "STANDARD":
+    hot: false # Or false
+    description: "Description"
+    price: 10
+    detail: "Mobirise is perfect for non-techies who are not familiar with web development."
+    storage: 10
+    email: 10
+    option: "Fugit"
+    link: "https://mobirise.com"
+
+- "BUSINESS":
+    hot: true # Or false
+    description: "Description"
+    price: 20
+    detail: "Mobirise is perfect for non-techies who are not familiar with web development."
+    storage: 20
+    email: 10
+    option: "Doloribus"
+    link: "https://mobirise.com"
+
+- "PREMIUM":
+    hot: false # Or false
+    description: "Description"
+    price: 30
+    detail: "Mobirise is perfect for non-techies who are not familiar with web development."
+    storage: 30
+    email: 10
+    option: "Eos"
+    link: "https://mobirise.com"
+
+- "ULTIMATE":
+    hot: false # Or false
+    description: "Description"
+    price: 40
+    detail: "Mobirise is perfect for non-techies who are not familiar with web development."
+    storage: 40
+    email: 10
+    option: "Rerum"
+    link: "https://mobirise.com"
