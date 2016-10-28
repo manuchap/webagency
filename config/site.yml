@@ -50,6 +50,7 @@ metafields:
   bgs:
     intro: "/samples/assets/pexels-photo-1.jpg"
     contact: "/samples/assets/pexels-photo-26829-1.jpg"
+    video: "/samples/assets/apple-iphone-technology-blur.jpg"
     youtube: C-9V2TzqtxQ
   address:
     street: 700 South Laflin Street, Chicago, IL 60607

@@ -3,6 +3,8 @@ bgs:
   fields:
     intro:
       type: image
+    video:
+      type: image
     contact:
       type: image
     youtube:

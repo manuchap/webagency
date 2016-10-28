@@ -1,19 +1,19 @@
-{% capture vlink %}https://www.youtube.com/embed/{{ site.metafields.bgs.youtube }}?rel=0&amp;showinfo=0&autoplay=1&loop=0{% endcapture %}
-{% capture ilink %}https://img.youtube.com/vi/{{ site.metafields.bgs.youtube }}/maxresdefault.jpg{% endcapture %}
-{% capture flink %}https://www.youtube.com/embed/{{ site.metafields.bgs.youtube }}?autoplay=1&modestbranding=1&controls=0&showinfo=0&rel=0&enablejsapi=1&version=3&playerapiid=mbYTP_video_1477229250347&origin=*&allowfullscreen=true&wmode=transparent&iv_load_policy=3&html5=1&widgetid=1{% endcapture %}
-%section#header4-1.mbr-section.mbr-section-hero.mbr-section-full.mbr-section-with-arrow{"data-bg-video" => "{{ vlink }}"}
-  .mbr-background-video-preview{:style => "background-size: cover; background-image: url({{ ilink }}); background-position: 50% 50%;"}
-  #video_1477229250347.mbr-background-video.mb_YTPlayer.isMuted
-    #wrapper_mbYTP_video_1477229250347.mbYTP_wrapper{:style => "position: absolute; z-index: 0; min-width: 100%; min-height: 100%; left: 0px; top: 0px; overflow: hidden; opacity: 0;"}
-      %iframe#mbYTP_video_1477229250347.playerBox{:allowfullscreen => "1", :frameborder => "0", :height => "360", :src => "{{ flink }}", :style => "position: absolute; z-index: 0; width: 1268px; height: 914.6800000000001px; top: 0px; left: 0px; overflow: hidden; opacity: 1; margin-top: -128.84px; margin-left: -57.5px;", :title => "YouTube video player", :width => "640"}
-      .YTPOverlay{:style => "position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"}
+{% capture vlink %}http://www.youtube.com/embed/{{ site.metafields.bgs.youtube }}?rel=0&amp;showinfo=0&autoplay=0&loop=1{% endcapture %}
+%section#header4-1.mbr-section.mbr-parallax-background{:style => "background-image: none; padding-top: 240px; padding-bottom: 240px; position: relative; background-attachment: scroll; background-size: auto;"}
+  #jarallax-container-0{:style => "position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; transition: transform linear -1ms, transform linear -1ms; -webkit-transition: transform linear -1ms, transform linear -1ms; visibility: hidden; z-index: -100;"}
+    %div{:style => "background-image: url({{ site.metafields.bgs.video }}); position: fixed; top: 0px; left: 0px; width: 1309px; height: 837px; overflow: hidden; pointer-events: none; transition: transform linear -1ms, transform linear -1ms; -webkit-transition: transform linear -1ms, transform linear -1ms; background-size: 1309px 981.75px; visibility: visible; transform: translate3d(0px, -103.8px, 0px); background-position: 50% 50%; background-repeat: no-repeat no-repeat;"}
   .mbr-overlay{:style => "opacity: 0.5; background-color: rgb(0, 0, 0);"}
-  .mbr-table-cell
-    .container
-      .row
-        .mbr-section.col-md-10.col-md-offset-2.text-xs-right
-          %h1.mbr-section-title.display-1 VIDEO BACKGROUND
-          %p.mbr-section-lead.lead Intro with background video and color overlay. Text and buttons are aligned to right. Mobirise helps you cut down development time by providing you with a flexible website editor with a drag and drop interface.
-  .mbr-arrow.mbr-arrow-floating{"aria-hidden" => "true"}
-    %a{:href => "#features7-2"}
-      %i.mbr-arrow-icon
+  .container
+    .row
+      .mbr-table-md-up
+        .mbr-table-cell.mbr-right-padding-md-up.col-md-5.text-xs-center.text-md-right{:style => "color: #FFF; "}
+          {% block 'video' %}
+          %h3.mbr-section-title.display-2 {% editable_text "video", hint: "Big title.", block:"video", line_break: false, format: 'raw', rows: 1 %}video tuto{% endeditable_text %}
+          .lead
+            %p {% editable_text "lead", hint: "Lead text.", block:"video", format: "html", rows: 8 %}Click any text to edit or style it. Click blue "Gear" icon in the top right corner to hide/show buttons, text, title and change the block background.{% endeditable_text %}
+          {% endblock %}
+        .mbr-table-cell.mbr-valign-top.col-md-7
+          .mbr-figure
+            %iframe.mbr-embedded-video{:allowfullscreen => "", :frameborder => "0", :height => "720", :src => "{{ vlink }}", :style => "height: 357.1875px;", :width => "1280"}
+
+
