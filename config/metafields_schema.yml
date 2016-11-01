@@ -10,7 +10,7 @@ bgs:
     youtube:
       type: string
 address:
-  label: Adress
+  label: Address
   fields:
     street:
       hint: "Physical address of your store"
