@@ -1,7 +1,7 @@
 # The name of this site
 # This text displays in the back-office and
 # can be used in templates through the site.name global variable
-name: "websites.studiowan.fr"
+name: "website.com"
 
 # An array of domain aliases for the site
 # This option is for sites on multi-site engines
@@ -23,7 +23,7 @@ locales: [en, fr]
 # And include <meta type="keywords"> and <meta type="description">
 # For this purpose you can set values for these variables here
 # They can be accessed in templates through the site.seo_title, site.meta_keywords, and site.meta_description variables
-seo_title: websites.studiowan.fr
+seo_title: website.com
 meta_keywords: "some meta keywords"
 meta_description: "some meta description"
 
@@ -61,10 +61,10 @@ metafields:
     phone: "+1 (0) 000 0000 001"
     fax: "+1 (0) 000 0000 002"
   links:
-    support: http://support.studiowan.fr/
+    support: http://support.website.com/
     link1_title: Website editor
-    link1_url: http://site-editor.studiowan.fr/
+    link1_url: http://site-editor.website.com/
     link2_title: Download for Windows
-    link2_url: http://site-editor.studiowan.fr/win.zip
+    link2_url: http://site-editor.website.com/win.zip
     link3_title: Download for Mac
-    link3_url: http://site-editor.studiowan.fr/mac.zip
+    link3_url: http://site-editor.website.com/mac.zip
